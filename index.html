@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental Health Care</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="vdo">
+      <video autoplay muted loop class="bg-video">
+        <source src="video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <header class="main-header">
+      <div class="logo-container">
+        <img src="logoI.png" alt="Mental Health Care Logo" class="logo-img" />
+      </div>
+    
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#program" class="nav-btn">Home</a></li>
+          <li><a href="#about" class="nav-btn">About Us</a></li>
+          <li><a href="#Experts" class="nav-btn">Experts</a></li>
+          <li><a href="#Chat" class="nav-btn">Chat</a></li>
+          <li><a href="#blog" class="nav-btn">Blog</a></li>
+          <li><a href="#contact" class="nav-btn">Contact Us</a></li>
+ 
+        </ul>
+      </nav>
+    
+      <div class="client-login">
+        <button class="get-started" onclick="openLogin()">Login / Sign Up</button>
+      </div>
+    </header>
+    
+     
+    <main>
+      <!-- Home Page -->
+      <section class="front" id="program">
+        <div class="page1">
+          <div class="main_page">
+            <h1>Your Mental Health Matters</h1>
+            <p>
+              "Your mental health is a priority. Your happiness is essential.
+              Your self-care is a necessity."
+            </p>
+            <p>
+              We provide professional support to help you navigate through
+              life's challenges.
+            </p>
+            <p>✔ 24/7 Chat Support with AI-Powered Mental Health Bot</p>
+            <p>✔ Connect with Certified Therapists & Counselors</p>
+            <p>✔ Access to Mental Wellness Resources</p>
+
+            <!-- Book Appontment: -->
+            <div class="appointment-btn">
+              <a href="" class="btn-appointment">Book an Appointment</a>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <div class="front_image">
+            <model-viewer
+              src="DOCTOR 2.glb"
+              alt="3D Model"
+              auto-rotate
+              camera-controls
+              ar
+              shadow-intensity="1"
+              id=" main_doctor"
+            >
+            </model-viewer>
+          </div>
+        </div>
+      </section>
+
+      <div class="chatBot">
+        <model-viewer
+          src="DOCTOR 1.glb"
+          alt="3D Model"
+          auto-rotate
+          camera-controls
+          ar
+          shadow-intensity="1"
+          id="doctor"
+        >
+        </model-viewer>
+      </div>
+
+      <!-- About Page -->
+
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <h1 class="about-title">
+            We’re Here to Listen, Support, and Empower
+          </h1>
+          <p class="about-intro">
+            Your mental health is not a luxury — it's a necessity. We're
+            dedicated to breaking the stigma and offering a safe, compassionate
+            space for healing and growth.
+          </p>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h2>🧠 Our Mission</h2>
+              <p>
+                To make mental wellness support easily accessible to everyone
+                through empathy, technology, and professional care.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <h2>🤝 What We Offer</h2>
+              <ul>
+                <li>✔ 24/7 AI chat support</li>
+                <li>✔ Licensed therapists & counselors</li>
+                <li>✔ Guided self-help resources</li>
+                <li>✔ Mental wellness tracking tools</li>
+              </ul>
+            </div>
+
+            <div class="about-card">
+              <h2>💡 Why Choose Us</h2>
+              <p>
+                We're not just an app. We’re your companion on the journey to
+                mental clarity, emotional balance, and personal growth — anytime
+                you need us.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-contact">
+            <h3>📞 Emergency Support</h3>
+            <p>Call Us Anytime:</p>
+            <p class="numbers">7888758122 | 7970664221</p>
+            <button class="about-btn">Talk to Someone Now</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERTS: -->
+
+      <!-- Experts Section -->
+      <section class="experts" id="Experts">
+        <div class="container">
+          <h2>Meet Our Experts</h2>
+          <p class="subtitle">
+            Compassionate, certified professionals ready to support you.
+          </p>
+
+          <div class="expert-cards">
+            <div class="expert-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt="Dr. Priya Sharma"
+              />
+              <h3>Dr. Priya Sharma</h3>
+              <p>Clinical Psychologist</p>
+              <p>
+                12+ years of experience in trauma recovery and emotional
+                well-being.
+              </p>
+            </div>
+            <div class="expert-card">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Dr. Arjun Mehta"
+              />
+              <h3>Dr. Arjun Mehta</h3>
+              <p>Psychiatrist</p>
+              <p>
+                Specialist in anxiety, depression, and medication management.
+              </p>
+            </div>
+            <div class="expert-card">
+              <img
+                src="https://randomuser.me/api/portraits/women/68.jpg"
+                alt="Anjali Rao"
+              />
+              <h3>Anjali Rao</h3>
+              <p>Certified Therapist</p>
+              <p>Focused on youth counseling and family therapy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ChatBot Or Chat -->
+      <!-- Chat Section -->
+      <section class="chat-section" id="Chat">
+        <div class="chat-container">
+          <h2>AI Mental Health ChatBot</h2>
+          <p class="chat-subtitle">
+            We're here to listen. Chat anonymously with our AI-powered bot
+            anytime.
+          </p>
+
+          <div class="chatbox">
+            <div class="chat-messages" id="chatMessages">
+              <div class="bot-message">
+                👋 Hi there! How can I support your mental health today?
+              </div>
+            </div>
+            <div class="chat-input">
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message..."
+              />
+              <button onclick="sendMessage()">Send</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+ 
+
+<!-- Blog -->
+<section id="blog">
+  <div class="blog-container">
+    <h2 class="blog-title">Our Blog</h2>
+
+    <!-- Patient Recovery Stories -->
+    <div class="blog-section">
+      <h3>💬 Patient Recovery Stories</h3>
+      <div class="story-box">
+        <p class="quote">"I struggled with anxiety for years, but thanks to the support from Mental Health Care, I now have the tools to manage it and live a balanced life."</p>
+        <p class="author">– Priya S.</p>
+      </div>
+      <div class="story-box">
+        <p class="quote">"Depression made everything feel impossible. The therapy sessions changed my outlook entirely. I'm so grateful for the care and empathy I received."</p>
+        <p class="author">– Aakash M.</p>
+      </div>
+    </div>
+
+    <!-- FAQs -->
+    <div class="blog-section">
+      <h3>❓ Frequently Asked Questions (FAQs)</h3>
+      <details class="faq">
+        <summary>How do I know if I need therapy?</summary>
+        <p>If you're feeling overwhelmed, anxious, or unable to cope with daily life, speaking with a mental health professional can help. Therapy is a safe space to explore your feelings.</p>
+      </details>
+      <details class="faq">
+        <summary>Are your services confidential?</summary>
+        <p>Yes. Everything you share is kept completely confidential as per professional ethics and privacy policies.</p>
+      </details>
+      <details class="faq">
+        <summary>Can I book appointments online?</summary>
+        <p>Absolutely. Visit our 'Appointments' section to book a session with one of our experts at your convenience.</p>
+      </details>
+    </div>
+
+    <!-- Mental Health Tips -->
+    <div class="tips-section">
+      <h3>🌿 Mental Health Tips</h3>
+      <ul class="tips-list">
+        <li><span class="tip-icon">🧘</span> Practice mindfulness and meditation daily.</li>
+        <li><span class="tip-icon">👨‍👩‍👧‍👦</span> Stay connected with friends and family.</li>
+        <li><span class="tip-icon">🏃</span> Get regular physical activity and rest.</li>
+        <li><span class="tip-icon">💬</span> Don’t hesitate to seek professional help when needed.</li>
+      </ul>
+    </div>
+    
+  </div>
+</section>
+
+
+      <!-- CONTACT US -->
+
+      <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>
+          We are here to support you. Feel free to reach out to us via phone,
+          email, or visit our office.
+        </p>
+        <div class="contact-info">
+          <p>
+            <strong>📍 Address:</strong> 123 Wellness Street, Mindville, MH
+            56789
+          </p>
+          <p><strong>📞 Phone:</strong> +1 (800) 123-4567</p>
+          <p><strong>✉️ Email:</strong> support@mentalhealthcare.com</p>
+          <p><strong>🕒 Working Hours:</strong> Mon - Fri: 9 AM - 6 PM</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Appointment Modal -->
+<div id="appointmentModal" class="appointment-modal hidden">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeAppointment()">&times;</span>
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <select required>
+        <option value="">Select Mental Health Concern</option>
+        <option value="anxiety">Anxiety</option>
+        <option value="depression">Depression</option>
+        <option value="stress">Stress</option>
+        <option value="relationship">Relationship Issues</option>
+        <option value="other">Other</option>
+      </select>
+      <textarea placeholder="Additional Notes (Optional)"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- login -->
+      <!-- Login Modal -->
+      <div id="loginPopup" class="login-container hidden">
+        <span class="close-btn" onclick="closeLogin()">&times;</span>
+
+        <div class="form-wrapper">
+          <form id="loginForm">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" placeholder="Email" required />
+            <input
+              type="password"
+              id="loginPassword"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Login</button>
+            <p>
+              Don't have an account?
+              <a href="#" onclick="switchToSignup()">Sign Up</a>
+            </p>
+          </form>
+
+          <form id="signupForm" class="hidden">
+            <h2>Sign Up</h2>
+            <input
+              type="text"
+              id="signupUsername"
+              placeholder="Username"
+              required
+            />
+            <input type="email" id="signupEmail" placeholder="Email" required />
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Password"
+              required
+            />
+            <button type="submit">Sign Up</button>
+            <p>
+              Already have an account?
+              <a href="#" onclick="switchToLogin()">Login</a>
+            </p>
+          </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Mental Health Care. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
